@@ -1,0 +1,36 @@
+{
+  "name": "p5-tutorial",
+  "version": "0.0.0",
+  "description": "A tutorail package using p5",
+  "author": {
+    "name": "Clubwho"
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "nodecg": {
+    "compatibleRange": "1.4.0",
+    "dashboardPanels": [
+      {
+        "name": "lower-third",
+        "title": "Lower Third",
+        "width": 3,
+        "file": "lower-third.html",
+        "headerColor": "#525F78"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "lower-third.html",
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "scripts": {
+    "start": "node ../.. --bundlesEnabled=p5-tutorial"
+  }
+}
