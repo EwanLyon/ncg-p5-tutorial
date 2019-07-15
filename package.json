@@ -1,5 +1,5 @@
 {
-  "name": "p5-tutorial",
+  "name": "ncg-p5-tutorial",
   "version": "0.0.0",
   "description": "A tutorail package using p5",
   "author": {
@@ -31,6 +31,6 @@
     ]
   },
   "scripts": {
-    "start": "node ../.. --bundlesEnabled=p5-tutorial"
+    "start": "node ../.. --bundlesEnabled=ncg-p5-tutorial"
   }
 }
