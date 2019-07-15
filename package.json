@@ -19,7 +19,8 @@
         "title": "Lower Third",
         "width": 3,
         "file": "lower-third.html",
-        "headerColor": "#525F78"
+        "headerColor": "#525F78",
+        "workspace": "P5.js"
       }
     ],
     "graphics": [

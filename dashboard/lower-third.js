@@ -1,20 +1,20 @@
 let input, button;
 
 function setup() {
-  // create canvas
+  // Create canvas
   createCanvas(416, 30);
 
+  // Setup input
   input = createInput();
-  input.position(20, 65);
+  input.position(20, 15);
 
+  // Setup button and behaviour
   button = createButton('Show');
-  button.position(input.x + input.width, 65);
+  button.position(input.x + input.width, 15);
   button.mousePressed(showLowerThird);
-
-  textAlign(CENTER);
-  textSize(50);
 }
 
 function showLowerThird() {
+  // Send message to graphic
   nodecg.sendMessage('showLowerThird', input.value())
 }
