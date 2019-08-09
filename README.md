@@ -17,4 +17,5 @@ const replicantValue = nodecg.Replicant('replicantName');
 
 replicantValue.on('change', newVal => {
     someElement.html(newVal);
-});```
+});
+```
