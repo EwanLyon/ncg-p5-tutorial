@@ -1,4 +1,20 @@
 # ncg-p5-tutorial
-p-5-tutorial is a [NodeCG](http://github.com/nodecg/nodecg) bundle. 
-It works with NodeCG versions which satisfy this [semver](https://docs.npmjs.com/getting-started/semantic-versioning) range: `1.4.0`
-You will need to have an appropriate version of NodeCG installed to use it.
+
+Basic bundle for people to use [p5.js](https://p5js.org/) and [NodeCG](https://nodecg.com/).
+
+## Graphics
+
+This bundle contains 2 graphics: a lower third and a counter. When the counter value updates it will flash and the lower third will show and hide.
+
+## p5.js Implementation
+
+For p5.js to work you need both the standard p5.js file and the p5.dom.js library. These will be stored in the `shared` folder so both the dashboard and graphics files can use them.
+
+To modify an element on a replicant change all the nodecg code needed is:
+
+```javascript
+const replicantValue = nodecg.Replicant('replicantName');
+
+replicantValue.on('change', newVal => {
+    someElement.html(newVal);
+});```
